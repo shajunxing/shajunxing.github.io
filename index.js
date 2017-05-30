@@ -24,8 +24,8 @@ function load(url) {
             document.getElementsByTagName('article')[0].innerHTML = xhr.responseText;
         }
     }
-    console.log(encodeURIComponent(url));
-    xhr.open("GET", encodeURIComponent(url), true);
+    // xhr.open("GET", encodeURIComponent(url), true);
+    xhr.open("GET", url, true);
     xhr.setRequestHeader('Content-type', 'text/html');
     xhr.send();
 }
@@ -40,7 +40,8 @@ function parseQueryString() {
     ret = {};
     for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split('=');
-        ret[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+        // ret[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+        ret[pair[0]] = pair[1];
     }
     return ret;
 }
