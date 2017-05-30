@@ -23,6 +23,7 @@ function load(url) {
             document.getElementsByTagName('article')[0].innerHTML = xhr.responseText;
         }
     }
+    console.log(encodeURIComponent(url));
     xhr.open("GET", encodeURIComponent(url), true);
     xhr.setRequestHeader('Content-type', 'text/html');
     xhr.send();
