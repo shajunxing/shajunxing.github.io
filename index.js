@@ -23,7 +23,7 @@ function load(url) {
             document.getElementsByTagName('article')[0].innerHTML = xhr.responseText;
         }
     }
-    xhr.open("GET", url, true);
+    xhr.open("GET", encodeURIComponent(url), true);
     xhr.setRequestHeader('Content-type', 'text/html');
     xhr.send();
 }
