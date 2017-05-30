@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     } else {
         load(parseQueryString()['load']);
     }
+    return true;
 });
 
 function search(e) {
