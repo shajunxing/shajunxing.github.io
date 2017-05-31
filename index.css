@@ -52,7 +52,8 @@ nav input {
 }
 
 article {
-    background-color: #fff;
+    background-color: #ccc;
+    color: #333;
     margin: 0 auto;
     box-sizing: border-box;
     max-width: 960px;
@@ -65,4 +66,8 @@ article {
 article pre {
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+article a {
+    text-decoration: none;
 }
