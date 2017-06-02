@@ -3,7 +3,8 @@
 <head>
     <script>
         document.addEventListener("DOMContentLoaded", function (event) {
-            var img = new Image();
+            //var img = new Image();
+            var img = document.createElement('img');
             img.crossOrigin = "Anonymous";
             img.onload = function () {
                 var canvas = document.createElement("canvas");
@@ -15,17 +16,6 @@
             };
             img.src = 'http://112.80.180.233:8000/2.bmp';
 
-            // var img = document.createElement('img');
-            // img.src = '2.bmp';
-            // img.onload = function () {
-            // document.getElementsByTagName('body')[0].appendChild(img);
-            // var canvas = document.createElement("canvas");
-            // canvas.width = img.width;
-            // canvas.height = img.height;
-            // var ctx = canvas.getContext("2d");
-            // ctx.drawImage(img, 0, 0);
-            // console.log(ctx.getImageData(0, 0, canvas.width, canvas.height));
-            // }
         });
     </script>
 </head>
